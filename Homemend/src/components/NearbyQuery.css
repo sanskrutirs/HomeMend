@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #26B99A;
+    --dark-bg: #1E1E1E;
+    --light-bg: #E6FFF9;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-1px);
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.service-title {
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+
+.service-body {
+    padding: 1rem;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+
+.btn-succ {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 0.25rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-succ:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Modal Styles */
+.service-details-card {
+    padding: 1rem;
+}
+
+.provider-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}

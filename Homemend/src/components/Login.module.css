@@ -1,0 +1,280 @@
+/* Login.module.css */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #E4FFFA;
+}
+
+.formContainer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 968px;
+    max-width: 100%;
+    min-height: 650px;
+}
+
+.signupForm,
+.signinForm {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    width: 50%;
+}
+
+.signupForm {
+    right: 0;
+    opacity: 0;
+    z-index: 1;
+    transform: translateX(100%);
+}
+
+.signupForm.show {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 5;
+}
+
+.signinForm {
+    left: 0;
+    z-index: 2;
+}
+
+.signinForm.show {
+    transform: translateX(0);
+}
+
+.formContainer.slide .signinForm {
+    transform: translateX(-100%);
+}
+
+.card {
+    height: 100%;
+    background: transparent;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.overlayContainer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.formContainer.slide .overlayContainer {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: #1BAC91;
+    background: linear-gradient(to right, #1BAC91, #159b82);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.formContainer.slide .overlay {
+    transform: translateX(50%);
+}
+
+.overlayLeft,
+.overlayRight {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlayLeft {
+    transform: translateX(-20%);
+}
+
+.overlayRight {
+    right: 0;
+    transform: translateX(0);
+}
+
+.formContainer.slide .overlayLeft {
+    transform: translateX(0);
+}
+
+.formContainer.slide .overlayRight {
+    transform: translateX(20%);
+}
+.overlay h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+/* Form Styling */
+.formControl {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    margin: 4px 0;
+    width: 100%;
+}
+
+.formControl:focus {
+    background-color: #fff;
+    border: 1px solid #1BAC91;
+    box-shadow: 0 0 0 0.2rem rgba(27, 172, 145, 0.25);
+}
+
+/* Button Styling */
+.btn {
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btnPrimary {
+    background-color: #1BAC91;
+    border-color: #1BAC91;
+}
+
+.btnPrimary:hover {
+    background-color: #159b82;
+    border-color: #159b82;
+}
+
+.btnOutlinePrimary {
+    color: #1BAC91;
+    border-color: #1BAC91;
+}
+
+.btnOutlinePrimary:hover,
+.btnCheck:checked + .btnOutlinePrimary {
+    background-color: #1BAC91;
+    border-color: #1BAC91;
+    color: white;
+}
+
+/* Radio Button Group */
+.btnGroup {
+    margin-bottom: 15px;
+}
+
+/* Row Spacing */
+.row {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 0.5rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        min-height: 800px;
+    }
+
+    .signupForm,
+    .signinForm,
+    .overlayContainer {
+        width: 100%;
+        height: 50%;
+    }
+
+    .signupForm {
+        transform: translateY(100%);
+    }
+
+    .signupForm.show {
+        transform: translateY(-50%);
+    }
+
+    .signinForm {
+        top: 50%;
+    }
+
+    .signinForm.show {
+        transform: translateY(-100%);
+    }
+
+    .formContainer.slide .signinForm {
+        transform: translateY(0);
+    }
+
+    .overlayContainer {
+        top: 50%;
+        left: 0;
+        transform: translateY(-100%);
+    }
+
+    .formContainer.slide .overlayContainer {
+        transform: translateY(0);
+    }
+
+    .overlay {
+        height: 200%;
+        left: 0;
+        top: -100%;
+        width: 100%;
+    }
+
+    .overlayLeft,
+    .overlayRight {
+        height: 50%;
+        width: 100%;
+    }
+
+    .overlayLeft {
+        top: 50%;
+        transform: translateY(-20%);
+    }
+
+    .formContainer.slide .overlayLeft {
+        transform: translateY(0);
+    }
+
+    .overlayRight {
+        transform: translateY(0);
+    }
+
+    .formContainer.slide .overlayRight {
+        transform: translateY(20%);
+    }
+}

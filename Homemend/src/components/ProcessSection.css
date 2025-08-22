@@ -1,0 +1,100 @@
+/* Process Section Styles */
+.main{
+  background-color: #F5F7F9;
+}
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    
+
+  }
+  
+  .hero-content {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)
+    );
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .hero-wrapper{
+    padding: 50px 100px !important;
+  }
+  .text-success{
+    color: #00ceb1 !important;
+  }
+  
+  .process-card {
+    background: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  
+  .process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .process-icon {
+    position: relative;
+  }
+  
+  .icon-wrapper {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 135, 84, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .bg-success{
+    background-color: #00ceb1 !important;
+  }
+  
+  .process-card:hover .icon-wrapper {
+    background-color: rgba(25, 135, 84, 0.2);
+  }
+  
+  .btn-outline-success {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: #00ceb1;
+    border-color: #00ceb1;
+    color: white;
+  }
+  
+  .btn-outline-success:hover {
+    border-width: 2px;
+    border-color: #00ceb1;
+    color: #00ceb1;
+    background-color: transparent;
+  }
+  
+  @media (max-width: 991.98px) {
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+    
+    .process-section {
+      padding: 3rem !important;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .process-section {
+      padding: 2rem !important;
+    }
+    
+    .process-card {
+      margin-bottom: 1.5rem;
+    }
+  }

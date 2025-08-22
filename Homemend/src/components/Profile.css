@@ -1,0 +1,94 @@
+/* Profile.css */
+:root {
+    --primary-color: #26B99A;
+    --dark-bg: #1E1E1E;
+    --light-bg: #E6FFF9;
+}
+
+/* Add container styles */
+.container {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Existing styles with more specific selectors */
+.profile-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.profile-form .form-section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1.5rem;
+}
+
+.profile-form .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-form .form-label {
+    width: 100px;
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.profile-form .form-control {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.profile-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(38, 185, 154, 0.1);
+    outline: none;
+}
+
+.profile-form .btn-save {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 3rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.profile-form .btn-save:hover {
+    background-color: #1fa88c;
+}
+
+.profile-form .text-right {
+    text-align: right;
+}
+
+/* Add global styles */
+body {
+    background-color: var(--light-bg);
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Add utility class for top margin */
+.mt-4 {
+    margin-top: 1.5rem !important;
+}

@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #26B99A;
+    --dark-bg: #1E1E1E;
+    --light-bg: #E6FFF9;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.service-title {
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.service-status {
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.status-pending {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+.status-accepted {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-completed {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.service-body {
+    padding: 1rem;
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    color: var(--primary-color);
+}
+
+.rating-star {
+    margin-right: 0.25rem;
+}
+
+.btn-cancel {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 0.25rem 1.5rem;
+    margin-top: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Modal Styles */
+.service-details-card {
+    padding: 1rem;
+}
+
+.provider-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.provider-avatar {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    border-radius: 50%;
+}
+
+.provider-info {
+    flex: 1;
+}
+
+.provider-info div {
+    margin-bottom: 0.25rem;
+}
+
+.feedback-form {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .star-rating {
+    margin-bottom: 10px;
+  }
+  
+  .rating-star.interactive {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .rating-star.interactive:hover {
+    color: #1bac91;
+  }
+  
+  .feedback-display {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .feedback-text {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  .btn-suc{
+    background-color: #1bac91;
+  }
+  .btn-feed{
+    background-color: #1bac91;
+  }

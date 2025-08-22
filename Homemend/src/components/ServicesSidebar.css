@@ -1,0 +1,33 @@
+.services-sidebar {
+  background-color: #e4fffa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.service-item {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700 !important;
+  background-color: #ffffff;
+}
+
+.service-item.active {
+  border-left-color: #26B99A;
+  background-color: #1A1C1C;
+  color: #26B99A;
+}
+
+.service-item:hover {
+  border-left-color: var(--primary-color);
+  background-color: #d0f5f0;
+}
+
+.worker-icon {
+  max-width: 200px;
+  margin: 2rem auto;
+  display: block;
+}

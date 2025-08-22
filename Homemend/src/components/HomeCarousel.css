@@ -1,0 +1,228 @@
+/* carousel.css */
+
+.carousel {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-content-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.carousel-text {
+  flex: 1;
+  color: white;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+
+
+.circular-image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px !important;
+
+  padding: 20px; /* Added padding around the image */
+}
+
+.circular-image {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circular-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.logo-text span {
+  color: var(--primary-color);
+}
+
+.carousel-subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.carousel-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+.action-buttons .btn {
+  margin: 0 10px;
+  padding: 12px 40px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-light:hover {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-indicators {
+  bottom: 40px;
+}
+
+:root {
+  --primary-color: #00b894;
+}
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .carousel-content-wrapper {
+      flex-direction: column;
+      padding-top: 30px;
+      text-align: center;
+  }
+
+  .carousel-text {
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 30px;
+  }
+
+  .circular-image-container {
+      padding-top: 50px !important;
+  }
+
+  .circular-image {
+      width: 350px;
+      height: 350px;
+  }
+
+  .logo-text {
+      font-size: 3rem;
+  }
+
+  .carousel-subtitle {
+      font-size: 2rem;
+  }
+
+  .carousel-description {
+      font-size: 1.1rem;
+  }
+
+  .action-buttons .btn {
+      padding: 10px 30px;
+  }
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+  .carousel-content-wrapper {
+      padding-top: 20px;
+  }
+
+  .circular-image-container {
+      padding-top: 30px !important;
+  }
+
+  .circular-image {
+      width: 250px;
+      height: 250px;
+  }
+
+  .logo-text {
+      font-size: 2.5rem;
+  }
+
+  .logo-text img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .carousel-subtitle {
+      font-size: 1.5rem;
+  }
+
+  .carousel-description {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .action-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .action-buttons .btn {
+      margin: 0;
+      padding: 10px 30px;
+      width: 200px;
+  }
+
+  .carousel-indicators {
+      bottom: 20px;
+  }
+}
+
+/* Small Mobile Devices (up to 375px) */
+@media screen and (max-width: 375px) {
+  .circular-image {
+      width: 200px;
+      height: 200px;
+  }
+
+  .logo-text {
+      font-size: 2rem;
+  }
+
+  .logo-text img {
+      width: 35px;
+      height: 35px;
+  }
+
+  .carousel-subtitle {
+      font-size: 1.2rem;
+  }
+
+  .carousel-description {
+      font-size: 0.9rem;
+  }
+
+  .action-buttons .btn {
+      width: 180px;
+      font-size: 0.9rem;
+  }
+}

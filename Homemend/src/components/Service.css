@@ -1,0 +1,26 @@
+/* App.css */
+:root {
+    --primary-color: #4CAF50; /* Adjust primary color as needed */
+    --light-bg: #E4FFFA; /* Matches the background color you wanted */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg);
+}
+
+.container {
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.col-md-4, .col-md-8 {
+    flex: 1;
+}
